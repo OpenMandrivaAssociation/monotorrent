@@ -10,6 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 License: MIT
 Group: System/Libraries
 Url: http://www.monotorrent.com/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: mono-devel
 
