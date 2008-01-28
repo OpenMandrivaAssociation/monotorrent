@@ -1,12 +1,12 @@
 %define name monotorrent
-%define version 0.2
+%define version 0.20
 %define release %mkrel 1
 
 Summary: Bittorrent library for Mono
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
+Source0: http://www.monotorrent.com/Files/%version/%{name}-%{version}.source.zip
 License: MIT
 Group: System/Libraries
 Url: http://www.monotorrent.com/
@@ -18,7 +18,8 @@ BuildRequires: mono-devel
 Monotorrent is an open source bittorrent library.
 
 %prep
-%setup -q
+%setup -q -c
+chmod +x configure
 
 %build
 ./configure --prefix=%_prefix
