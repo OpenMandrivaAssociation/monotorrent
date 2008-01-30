@@ -1,12 +1,13 @@
 %define name monotorrent
 %define version 0.20
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Bittorrent library for Mono
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://www.monotorrent.com/Files/%version/%{name}-%{version}.source.zip
+Patch: monotorrent-0.20-pkgconfig.patch
 License: MIT
 Group: System/Libraries
 Url: http://www.monotorrent.com/
@@ -19,6 +20,7 @@ Monotorrent is an open source bittorrent library.
 
 %prep
 %setup -q -c
+%patch -p1
 chmod +x configure
 
 %build
