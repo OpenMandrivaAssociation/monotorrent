@@ -1,6 +1,6 @@
 %define name monotorrent
-%define version 0.40
-%define fver 0.4
+%define version 0.50
+%define fver %version
 %define release %mkrel 1
 
 Summary: Bittorrent library for Mono
@@ -38,9 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc README TODO
-%_bindir/sampleclient
-%_bindir/trackerapp
 %dir %_prefix/lib/monotorrent
 %_prefix/lib/monotorrent/MonoTorrent.dll*
-%_prefix/lib/monotorrent/*.exe
 %_datadir/pkgconfig/monotorrent.pc
