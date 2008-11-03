@@ -1,5 +1,5 @@
 %define name monotorrent
-%define version 0.50
+%define version 0.60
 %define fver %version
 %define release %mkrel 1
 
