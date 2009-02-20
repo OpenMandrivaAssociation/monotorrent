@@ -1,5 +1,5 @@
 %define name monotorrent
-%define version 0.62
+%define version 0.70
 %define fver %version
 %define release %mkrel 1
 
@@ -7,7 +7,7 @@ Summary: Bittorrent library for Mono
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://www.monotorrent.com/Files/%version/%{name}-%{fver}.tar.gz
+Source0: http://www.monsoon-project.org/jaws/data/files/%{name}-%{fver}.tar.gz
 License: MIT
 Group: System/Libraries
 Url: http://www.monotorrent.com/
