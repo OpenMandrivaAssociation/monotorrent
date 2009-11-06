@@ -1,5 +1,5 @@
 %define name monotorrent
-%define version 0.72
+%define version 0.80
 %define fver %version
 %define release %mkrel 1
 
@@ -40,4 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO
 %dir %_prefix/lib/monotorrent
 %_prefix/lib/monotorrent/MonoTorrent.dll*
+%_prefix/lib/monotorrent/MonoTorrent.Dht.dll*
 %_datadir/pkgconfig/monotorrent.pc
+%_datadir/pkgconfig/monotorrent.dht.pc
