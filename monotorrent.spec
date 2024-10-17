@@ -10,7 +10,7 @@ Release: %{release}
 Source0: http://www.monsoon-project.org/jaws/data/files/%{name}-%{fver}.tar.gz
 License: MIT
 Group: System/Libraries
-Url: http://www.monotorrent.com/
+Url: https://www.monotorrent.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 BuildRequires: mono-devel
