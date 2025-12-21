@@ -13,6 +13,11 @@ Group: System/Libraries
 Url: https://www.monotorrent.com/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: mono-devel
 
 %description
