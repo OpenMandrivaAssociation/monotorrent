@@ -1,7 +1,7 @@
 %define name monotorrent
 %define version 0.80
 %define fver %version
-%define release %mkrel 2
+%define release 3
 
 Summary: Bittorrent library for Mono
 Name: %{name}
